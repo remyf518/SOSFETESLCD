@@ -1,160 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOS Fête LCD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#f7f7f7; color:#333; }
-    header { background:#007BFF; color:white; padding:20px; text-align:center; }
-    h1 { margin:0; font-size:2em; }
-    .slogan { font-size:1.2em; margin-top:5px; }
-    .container { padding:20px; max-width:1000px; margin:auto; }
-    .section { margin-bottom:40px; }
-    .services { display:flex; flex-wrap:wrap; gap:20px; }
-    .service-card {
-      flex:1 1 250px;
-      background:white;
-      padding:20px;
-      border-radius:10px;
-      box-shadow:0 0 10px rgba(0,0,0,0.05);
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f5f5;
+      color: #333;
     }
-    .btn {
-      display:inline-block;
-      background:#28A745;
-      color:white;
-      padding:12px 20px;
-      text-decoration:none;
-      border-radius:5px;
-      margin-top:10px;
-      cursor:pointer;
-      border:none;
-      font-size:1em;
+    header {
+      background: linear-gradient(135deg, #FF6B00, #007BFF);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
     }
-    footer {
-      text-align:center;
-      background:#333;
-      color:#ccc;
-      padding:15px;
-      font-size:0.9em;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    form {
-      background:white;
-      padding:20px;
-      border-radius:10px;
-      box-shadow:0 0 10px rgba(0,0,0,0.05);
-      max-width:600px;
-      margin:auto;
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
     }
-    form label {
-      display:block;
-      margin-bottom:8px;
-      font-weight:bold;
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    form input, form textarea {
-      width:100%;
-      padding:10px;
-      margin-bottom:15px;
-      border:1px solid #ccc;
-      border-radius:5px;
-      font-size:1em;
-      resize: vertical;
-    }
-    form textarea {
-      min-height:100px;
+    .highlight {
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
     }
     .testimonials {
-      background:#e9f0fb;
-      padding:20px;
-      border-radius:10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
     }
     .testimonial {
-      background:white;
-      padding:15px 20px;
-      border-radius:8px;
-      box-shadow:0 0 5px rgba(0,0,0,0.1);
-      margin-bottom:15px;
+      background: #ffffff;
+      border-left: 5px solid #FF6B00;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    .testimonial p {
-      font-style: italic;
-      margin:0 0 10px 0;
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
     }
-    .testimonial .author {
-      text-align:right;
-      font-weight:bold;
-      color:#007BFF;
+    form button {
+      background: #FF6B00;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
     }
-    @media(max-width:600px){
-      .services { flex-direction:column; }
+    form button:hover {
+      background: #007BFF;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>SOS Fête LCD</h1>
-  <div class="slogan">Intervention d'urgence après fêtes et dégradations dans vos locations courte durée</div>
-</header>
+  <header>
+    <h1>SOS Fête LCD</h1>
+    <p>Interventions d'urgence après soirées et dégradations en Airbnb</p>
+  </header>
 
-<div class="container">
+  <section class="highlight">
+    <h2>Notre mission</h2>
+    <p>Nous intervenons 7j/7 pour constater les dégradations dans les logements Airbnb et LCD, établir des preuves et vous assister pour activer votre couverture AirCover. Réactivité, efficacité et discrétion assurées.</p>
+  </section>
 
-  <div class="section">
-    <h2>Qui sommes-nous ?</h2>
-    <p>SOS Fête LCD intervient rapidement dans vos logements en location courte durée après des soirées non autorisées ou des dégradations. Nous vous aidons à constituer votre dossier de réclamation (photos, constats, rapport) pour les assurances et plateformes.</p>
-  </div>
-
-  <div class="section">
-    <h2>Nos services</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Constat & Photos</h3>
-        <p>Réalisation d'un constat détaillé avec photos des dégradations et anomalies constatées sur place.</p>
-      </div>
-      <div class="service-card">
-        <h3>Rapport détaillé</h3>
-        <p>Rédaction d’un rapport clair et complet à joindre à votre dossier de réclamation.</p>
-      </div>
-      <div class="service-card">
-        <h3>Aide AirCover & Assurances</h3>
-        <p>Accompagnement dans la constitution de votre demande auprès des plateformes et assurances.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section testimonials">
+  <section>
     <h2>Témoignages clients</h2>
-    <div class="testimonial">
-      <p>« Grâce à SOS Fête LCD, j'ai pu faire ma réclamation rapidement après une soirée qui a mal tourné. Service efficace et rapide ! »</p>
-      <div class="author">– Camille D.</div>
+    <div class="testimonials">
+      <div class="testimonial">
+        "Merci à l'équipe SOS Fête LCD pour leur intervention rapide après une soirée non autorisée. Le dossier AirCover a été validé sans problème."
+        <strong>— Thomas, Lyon</strong>
+      </div>
+      <div class="testimonial">
+        "Professionnels et discrets, ils ont géré la situation parfaitement. Service indispensable pour tout gestionnaire Airbnb."
+        <strong>— Claire, Paris</strong>
+      </div>
+      <div class="testimonial">
+        "Très rassurant de pouvoir compter sur un service aussi réactif, même le week-end !"
+        <strong>— Mehdi, Marseille</strong>
+      </div>
     </div>
-    <div class="testimonial">
-      <p>« Intervention rapide et rapport détaillé, parfait pour obtenir un remboursement via AirCover. Je recommande ! »</p>
-      <div class="author">– Julien M.</div>
-    </div>
-    <div class="testimonial">
-      <p>« Professionnel et rassurant, SOS Fête LCD m'a beaucoup aidé dans la gestion des dégradations. »</p>
-      <div class="author">– Sophie L.</div>
-    </div>
-  </div>
+  </section>
 
-  <div class="section" id="contact">
+  <section class="highlight">
     <h2>Contactez-nous</h2>
-    <form action="https://formspree.io/f/mayvlrqd" method="POST">
-      <label for="name">Nom</label>
-      <input type="text" id="name" name="name" required />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="_replyto" required />
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit" class="btn">Envoyer</button>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message..." rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
     </form>
-  </div>
+  </section>
 
-</div>
-
-<footer>
-  &copy; 2025 SOS Fête LCD — Tous droits réservés.
-</footer>
+  <footer>
+    &copy; 2025 SOS Fête LCD — Tous droits réservés
+  </footer>
 
 </body>
 </html>
